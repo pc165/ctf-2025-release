@@ -156,6 +156,19 @@ services:
       retries: 3
       start_period: 10s
 
+  block-cipher:
+    build:
+      context: ./block-cipher/challenge
+    ports:
+      - "8013:55744"
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:55744" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
   hidden-reports:
     build:
       context: ./hidden-reports/challenge
@@ -226,6 +239,32 @@ services:
       context: ./evidence/challenge
     ports:
       - "8019:80"
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:80" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  extinction:
+    build:
+      context: ./extinction/challenge
+    ports:
+      - "8020:80"
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:80" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  go-git-it:
+    build:
+      context: ./go-git-it/challenge
+    ports:
+      - "8021:80"
     restart: unless-stopped
     healthcheck:
       test: [ "CMD", "curl", "-f", "http://localhost:80" ]
@@ -313,11 +352,24 @@ services:
       retries: 3
       start_period: 10s
 
+  amd:
+    build:
+      context: ./amd/challenge
+    ports:
+      - "9006:8664"
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD-SHELL", "timeout 1 socat - TCP:localhost:8664,connect-timeout=1 </dev/null || exit 1" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
   bug-me:
     build:
       context: ./bug-me/challenge
     ports:
-      - "9006:4445"
+      - "9007:4445"
     restart: unless-stopped
     healthcheck:
       test: [ "CMD-SHELL", "timeout 1 socat - TCP:localhost:4445,connect-timeout=1 </dev/null || exit 1" ]
@@ -330,7 +382,7 @@ services:
     build:
       context: ./drago-daction/challenge
     ports:
-      - "9007:4445"
+      - "9008:4445"
     restart: unless-stopped
     healthcheck:
       test: [ "CMD-SHELL", "timeout 1 socat - TCP:localhost:4445,connect-timeout=1 </dev/null || exit 1" ]
@@ -343,7 +395,7 @@ services:
     build:
       context: ./go-back/challenge
     ports:
-      - "9008:4445"
+      - "9009:4445"
     restart: unless-stopped
     healthcheck:
       test: [ "CMD-SHELL", "timeout 1 socat - TCP:localhost:4445,connect-timeout=1 </dev/null || exit 1" ]
@@ -356,7 +408,7 @@ services:
     build:
       context: ./meow/challenge
     ports:
-      - "9009:4445"
+      - "9010:4445"
     restart: unless-stopped
     healthcheck:
       test: [ "CMD-SHELL", "timeout 1 socat - TCP:localhost:4445,connect-timeout=1 </dev/null || exit 1" ]
