@@ -19,15 +19,3 @@ detector-2.ctf.hackthelab.online:8018:http
 evidence.ctf.hackthelab.online:8019:http
 extinction.ctf.hackthelab.online:8020:http
 go-git-it.ctf.hackthelab.online:8021:http
-
-arrow-of-time.ctf.hackthelab.online:9000:tcp
-cert-tool.ctf.hackthelab.online:9001:tcp
-digital-citizen.ctf.hackthelab.online:9002:tcp
-flag-search.ctf.hackthelab.online:9003:tcp
-goto-zero.ctf.hackthelab.online:9004:tcp
-pascals-homomorphism.ctf.hackthelab.online:9005:tcp
-amd.ctf.hackthelab.online:9006:tcp
-bug-me.ctf.hackthelab.online:9007:tcp
-drago-daction.ctf.hackthelab.online:9008:tcp
-go-back.ctf.hackthelab.online:9009:tcp
-meow.ctf.hackthelab.online:9010:tcp
