@@ -465,6 +465,7 @@ services:
       - "80:80"
     volumes:
       - ./nginx.config:/etc/nginx/conf.d/default.conf:z
+      - ./index.html:/usr/share/nginx/html/index.html:z
     restart: unless-stopped
     healthcheck:
       test: [ "CMD", "curl", "-f", "http://localhost" ]
