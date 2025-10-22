@@ -2,7 +2,7 @@ FROM debian:bookworm
 
 RUN apt-get update -y
 #RUN apt-get install -y perl-base libmime-tools-perl graphicsmagick-imagemagick-compat socat
-RUN apt-get install -y perl-base libmime-tools-perl imagemagick socat
+RUN apt-get install -y perl-base libmime-tools-perl imagemagick socat curl
 
 # The current user
 RUN useradd -r ctf -u 1000
