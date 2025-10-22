@@ -156,19 +156,6 @@ services:
       retries: 3
       start_period: 10s
 
-  your-browser-hates-you:
-    build:
-      context: ./your-browser-hates-you/challenge
-    ports:
-      - "8013:443"
-    restart: unless-stopped
-    healthcheck:
-      test: [ "CMD", "python3", "-c", "import urllib.request, ssl; urllib.request.urlopen('https://localhost:443', context=ssl._create_unverified_context()).read()" ]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-      start_period: 10s
-
   hidden-reports:
     build:
       context: ./hidden-reports/challenge
