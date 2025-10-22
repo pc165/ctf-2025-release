@@ -12,6 +12,8 @@ services:
       timeout: 10s
       retries: 3
       start_period: 10s
+    networks:
+      - default
 
   dating:
     build:
@@ -25,6 +27,8 @@ services:
       timeout: 10s
       retries: 3
       start_period: 10s
+    networks:
+      - default
 
   hangman-one:
     build:
@@ -38,6 +42,8 @@ services:
       timeout: 10s
       retries: 3
       start_period: 10s
+    networks:
+      - default
 
   hangman-two:
     build:
@@ -51,6 +57,8 @@ services:
       timeout: 10s
       retries: 3
       start_period: 10s
+    networks:
+      - default
 
   hangman-three:
     build:
@@ -64,6 +72,8 @@ services:
       timeout: 10s
       retries: 3
       start_period: 10s
+    networks:
+      - default
 
   last:
     build:
@@ -77,6 +87,8 @@ services:
       timeout: 10s
       retries: 3
       start_period: 10s
+    networks:
+      - default
 
   moa-station:
     build:
@@ -90,6 +102,8 @@ services:
       timeout: 10s
       retries: 3
       start_period: 10s
+    networks:
+      - default
 
   pathing:
     build:
@@ -103,6 +117,8 @@ services:
       timeout: 10s
       retries: 3
       start_period: 10s
+    networks:
+      - default
 
   sighting:
     build:
@@ -116,6 +132,8 @@ services:
       timeout: 10s
       retries: 3
       start_period: 10s
+    networks:
+      - default
 
   slackblock-steg:
     build:
@@ -129,6 +147,8 @@ services:
       timeout: 10s
       retries: 3
       start_period: 10s
+    networks:
+      - default
 
   web-tutorial-1:
     build:
@@ -142,6 +162,8 @@ services:
       timeout: 10s
       retries: 3
       start_period: 10s
+    networks:
+      - default
 
   web-tutorial-2:
     build:
@@ -155,6 +177,8 @@ services:
       timeout: 10s
       retries: 3
       start_period: 10s
+    networks:
+      - default
 
   block-cipher:
     build:
@@ -168,6 +192,8 @@ services:
       timeout: 10s
       retries: 3
       start_period: 10s
+    networks:
+      - default
 
   hidden-reports:
     build:
@@ -181,6 +207,8 @@ services:
       timeout: 10s
       retries: 3
       start_period: 10s
+    networks:
+      - default
 
   hoard:
     build:
@@ -194,6 +222,8 @@ services:
       timeout: 10s
       retries: 3
       start_period: 10s
+    networks:
+      - default
 
   taxonomy:
     build:
@@ -207,6 +237,8 @@ services:
       timeout: 10s
       retries: 3
       start_period: 10s
+    networks:
+      - default
 
   detector:
     build:
@@ -220,6 +252,8 @@ services:
       timeout: 10s
       retries: 3
       start_period: 10s
+    networks:
+      - default
 
   detector-2:
     build:
@@ -233,6 +267,8 @@ services:
       timeout: 10s
       retries: 3
       start_period: 10s
+    networks:
+      - default
 
   evidence:
     build:
@@ -246,6 +282,8 @@ services:
       timeout: 10s
       retries: 3
       start_period: 10s
+    networks:
+      - default
 
   extinction:
     build:
@@ -259,6 +297,8 @@ services:
       timeout: 10s
       retries: 3
       start_period: 10s
+    networks:
+      - default
 
   go-git-it:
     build:
@@ -272,6 +312,8 @@ services:
       timeout: 10s
       retries: 3
       start_period: 10s
+    networks:
+      - default
 
   # TCP/Socket services (ports 9000+)
   arrow-of-time:
@@ -430,3 +472,9 @@ services:
       timeout: 10s
       retries: 3
       start_period: 10s
+    networks:
+      - default
+networks:
+  default:
+    name: "challenges_net"
+    driver: bridge
