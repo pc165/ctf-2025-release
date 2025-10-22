@@ -1,5 +1,5 @@
 # Use the official Nginx image as a base
-FROM nginx:1.27-alpine
+FROM nginx:1.7
 
 # Generate a self-signed certificate
 #RUN apk add openssl
