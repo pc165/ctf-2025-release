@@ -1,0 +1,392 @@
+services:
+  # Web services (ports 8000+)
+  cardx:
+    build:
+      context: ./cardx/challenge
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD", "python3", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000').read()" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  dating:
+    build:
+      context: ./dating/challenge
+    ports:
+      - "8001:8080"
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8080" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  hangman-one:
+    build:
+      context: ./hangman-one/challenge
+    ports:
+      - "8002:8000"
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD", "python3", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000').read()" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  hangman-two:
+    build:
+      context: ./hangman-two/challenge
+    ports:
+      - "8003:8000"
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD", "python3", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000').read()" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  hangman-three:
+    build:
+      context: ./hangman-three/challenge
+    ports:
+      - "8004:8000"
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD", "python3", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000').read()" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  last:
+    build:
+      context: ./last/challenge
+    ports:
+      - "8005:3000"
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD", "node", "-e", "require('http').get('http://localhost:3000', (r) => process.exit(r.statusCode === 200 ? 0 : 1)).on('error', () => process.exit(1))" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  moa-station:
+    build:
+      context: ./moa-station/challenge
+    ports:
+      - "8006:3003"
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD", "node", "-e", "require('http').get('http://localhost:3003', (r) => process.exit(r.statusCode === 200 ? 0 : 1)).on('error', () => process.exit(1))" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  pathing:
+    build:
+      context: ./pathing/challenge
+    ports:
+      - "8007:4000"
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD", "node", "-e", "require('http').get('http://localhost:4000', (r) => process.exit(r.statusCode === 200 ? 0 : 1)).on('error', () => process.exit(1))" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  sighting:
+    build:
+      context: ./sighting/challenge
+    ports:
+      - "8008:80"
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD-SHELL", "php -r 'file_get_contents(\"http://localhost:80\");' || exit 1" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  slackblock-steg:
+    build:
+      context: ./slackblock-steg/challenge
+    ports:
+      - "8009:8888"
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD", "python3", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8888').read()" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  soothsayer:
+    build:
+      context: ./soothsayer/challenge
+    ports:
+      - "8010:8000"
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD", "python3", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000').read()" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  web-tutorial-1:
+    build:
+      context: ./web-tutorial-1/challenge
+    ports:
+      - "8011:8000"
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD", "python3", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000').read()" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  web-tutorial-2:
+    build:
+      context: ./web-tutorial-2/challenge
+    ports:
+      - "8012:8000"
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD", "python3", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000').read()" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  your-browser-hates-you:
+    build:
+      context: ./your-browser-hates-you/challenge
+    ports:
+      - "8013:443"
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD", "python3", "-c", "import urllib.request, ssl; urllib.request.urlopen('https://localhost:443', context=ssl._create_unverified_context()).read()" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  hidden-reports:
+    build:
+      context: ./hidden-reports/challenge
+    ports:
+      - "8014:80"
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD", "node", "-e", "require('http').get('http://localhost:80', (r) => process.exit(r.statusCode === 200 ? 0 : 1)).on('error', () => process.exit(1))" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  hoard:
+    build:
+      context: ./hoard/challenge
+    ports:
+      - "8015:80"
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD", "node", "-e", "require('http').get('http://localhost:80', (r) => process.exit(r.statusCode === 200 ? 0 : 1)).on('error', () => process.exit(1))" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  taxonomy:
+    build:
+      context: ./taxonomy/challenge
+    ports:
+      - "8016:80"
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD", "node", "-e", "require('http').get('http://localhost:80', (r) => process.exit(r.statusCode === 200 ? 0 : 1)).on('error', () => process.exit(1))" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  detector:
+    build:
+      context: ./detector/challenge
+    ports:
+      - "8017:80"
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD", "node", "-e", "require('http').get('http://localhost:80', (r) => process.exit(r.statusCode === 200 ? 0 : 1)).on('error', () => process.exit(1))" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  detector-2:
+    build:
+      context: ./detector-2/challenge
+    ports:
+      - "8018:80"
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD", "node", "-e", "require('http').get('http://localhost:80', (r) => process.exit(r.statusCode === 200 ? 0 : 1)).on('error', () => process.exit(1))" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  evidence:
+    build:
+      context: ./evidence/challenge
+    ports:
+      - "8019:80"
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD", "node", "-e", "require('http').get('http://localhost:80', (r) => process.exit(r.statusCode === 200 ? 0 : 1)).on('error', () => process.exit(1))" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  # TCP/Socket services (ports 9000+)
+  arrow-of-time:
+    build:
+      context: ./arrow-of-time/challenge
+    ports:
+      - "9000:54321"
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD-SHELL", "timeout 1 bash -c '</dev/tcp/localhost/54321' || exit 1" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  cert-tool:
+    build:
+      context: ./cert-tool/challenge
+    ports:
+      - "9001:6464"
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD-SHELL", "timeout 1 socat - TCP:localhost:6464,connect-timeout=1 </dev/null || exit 1" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  digital-citizen:
+    build:
+      context: ./digital-citizen/challenge
+    ports:
+      - "9002:6537"
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD-SHELL", "timeout 1 socat - TCP:localhost:6537,connect-timeout=1 </dev/null || exit 1" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  flag-search:
+    build:
+      context: ./flag-search/challenge
+    ports:
+      - "9003:11010"
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD-SHELL", "timeout 1 socat - TCP:localhost:11010,connect-timeout=1 </dev/null || exit 1" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  goto-zero:
+    build:
+      context: ./goto-zero/challenge
+    ports:
+      - "9004:4445"
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD-SHELL", "timeout 1 socat - TCP:localhost:4445,connect-timeout=1 </dev/null || exit 1" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  pascals-homomorphism:
+    build:
+      context: ./pascals-homomorphism/challenge
+    ports:
+      - "9005:1999"
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD-SHELL", "timeout 1 socat - TCP:localhost:1999,connect-timeout=1 </dev/null || exit 1" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  bug-me:
+    build:
+      context: ./bug-me/challenge
+    ports:
+      - "9006:4445"
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD-SHELL", "timeout 1 socat - TCP:localhost:4445,connect-timeout=1 </dev/null || exit 1" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  drago-daction:
+    build:
+      context: ./drago-daction/challenge
+    ports:
+      - "9007:4445"
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD-SHELL", "timeout 1 socat - TCP:localhost:4445,connect-timeout=1 </dev/null || exit 1" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  go-back:
+    build:
+      context: ./go-back/challenge
+    ports:
+      - "9008:4445"
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD-SHELL", "timeout 1 socat - TCP:localhost:4445,connect-timeout=1 </dev/null || exit 1" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  meow:
+    build:
+      context: ./meow/challenge
+    ports:
+      - "9009:4445"
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD-SHELL", "timeout 1 socat - TCP:localhost:4445,connect-timeout=1 </dev/null || exit 1" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
