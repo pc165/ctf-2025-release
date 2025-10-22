@@ -13,8 +13,6 @@ author: "ron"
 flag: "CTF{told-you-its-not-timing}"
 description: |
   Can you figure out how to reveal the flag from this application?
-
-  Connect with: nc go-back.ctf.hackthelab.online 8022
 value: 1000 # Leave this as 1000 unless you have a reason to change it
 tags:
   - "Misc"

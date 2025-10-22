@@ -13,8 +13,6 @@ author: Daniel Pendolino
 flag: 'CTF{DontBeACheatAh}'
 description: |
   Terminal Challenges Welcome
-
-  Connect with: nc meow.ctf.hackthelab.online 8023
 value: 1000
 tags:
   - Terminal

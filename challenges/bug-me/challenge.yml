@@ -15,8 +15,6 @@ description: |
   A dragon has hidden his treasure and won't tell us where until we solve his puzzle! Can you untangle this binary and get the flag?
 
   *Note: This is supposed to be hard! We've provided a terminal for your convenience but you don't need to use it*
-
-  Connect with: nc bug-me.ctf.hackthelab.online 8020
 value: 1000 # Leave this as 1000 unless you have a reason to change it
 tags:
   - 'RE'

@@ -13,8 +13,6 @@ author: 'itsc0rg1 & symmetric'
 flag: 'CTF{plsverifynow}'
 description: |
   Can you authenticate these dragon cards?
-
-  Connect at: https://cardx.ctf.hackthelab.online
 value: 1000
 tags:
   - Forensics

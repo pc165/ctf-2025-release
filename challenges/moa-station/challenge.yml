@@ -14,8 +14,6 @@ flag: 'CTF{TRUST_BUT_VER1FY}'
 description: |
   The Ministry of Arstotzka is now accepting online visas, please submit the URL of your visa file for our agents to review. Glory to Arstotzka!
 
-  Connect at: https://moa-station.ctf.hackthelab.online
-
 value: 1000 # Leave this as 1000 unless you have a reason to change it
 tags:
   - 'Web'

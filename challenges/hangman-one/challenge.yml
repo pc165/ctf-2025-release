@@ -13,8 +13,6 @@ author: "itsc0rg1"
 flag: "CTF{hangm4nw1thfr1end5andf03s}"
 description: |
   Play hangman and guess the flag
-
-  Connect at: https://hangman-one.ctf.hackthelab.online
 value: 1000 # Leave this as 1000 unless you have a reason to change it
 tags:
   - "Web"

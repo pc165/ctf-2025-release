@@ -13,8 +13,6 @@ author: itsc0rg1
 flag: "CTF{S33dth3tw1st3r}"
 description: |
   Which came first the dragon or the egg? Guess correctly 30 times in a row.
-
-  Connect at: https://soothsayer.ctf.hackthelab.online
 value: 1000
 tags:
   - "Mobile"

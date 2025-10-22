@@ -13,8 +13,6 @@ author: 'symmetric'
 flag: 'CTF{bctrckngftw}'
 description: |
   Help, we seem to have lost the key to treasure! Using these key checks can you find it?
-
-  Connect with: nc flag-search.ctf.hackthelab.online 8005
 value: 1000 # Leave this as 1000 unless you have a reason to change it
 tags:
   - 'RE'

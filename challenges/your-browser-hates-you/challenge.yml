@@ -17,8 +17,6 @@ description: |
   *(Note: you'll intentionally get an SSL error when you visit the page)*
 
   Your browser might not like this one.
-
-  Connect at: https://your-browser-hates-you.ctf.hackthelab.online
 value: 1000
 tags:
   - 'Web'

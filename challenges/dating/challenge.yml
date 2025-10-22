@@ -13,8 +13,6 @@ author: 'ron'
 flag: 'CTF{helping-dragons-find-love-since-2025}'
 description: |
   Can you gain RCE to read the flag??
-
-  Connect at: https://dating.ctf.hackthelab.online
 value: 1000 # Leave this as 1000 unless you have a reason to change it
 tags:
   - 'Web'

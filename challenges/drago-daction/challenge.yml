@@ -13,8 +13,6 @@ author: "ron"
 flag: "CTF{file-writing-is-fun}"
 description: |
   Can you exploit this service to read the flag file?
-
-  Connect with: nc drago-daction.ctf.hackthelab.online 8021
 value: 1000
 tags:
   - "Pwn"
