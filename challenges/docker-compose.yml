@@ -130,19 +130,6 @@ services:
       retries: 3
       start_period: 10s
 
-  soothsayer:
-    build:
-      context: ./soothsayer/challenge
-    ports:
-      - "8010:8000"
-    restart: unless-stopped
-    healthcheck:
-      test: [ "CMD", "python3", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000').read()" ]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-      start_period: 10s
-
   web-tutorial-1:
     build:
       context: ./web-tutorial-1/challenge
