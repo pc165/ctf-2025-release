@@ -459,6 +459,19 @@ services:
       retries: 3
       start_period: 10s
 
+  acaan:
+    build:
+      context: ./acaan/challenge
+    ports:
+      - "9011:4113"
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD-SHELL", "timeout 1 socat - TCP:localhost:4113,connect-timeout=1 </dev/null || exit 1" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
   nginx:
     image: nginx:latest
     ports:
