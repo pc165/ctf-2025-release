@@ -8,13 +8,13 @@
 #   file documenting the solution)
 
 version: 'beta1'
-name: 'bug-me'
+name: 'labyrinth-of-logic'
 author: 'ron'
 flag: 'CTF{hope-you-enjoyed-this-one}'
 description: |
-  A dragon has hidden his treasure and won't tell us where until we solve his puzzle! Can you untangle this binary and get the flag?
-
-  *Note: This is supposed to be hard! We've provided a terminal for your convenience but you don't need to use it*
+  An ancient guardian has concealed his treasure behind a complex puzzle locked within this mysterious binary. The challenge is intentionally difficult - consider it the ultimate test of your reverse engineering prowess!
+  
+  A terminal environment is available for your convenience, though creative solvers may find alternative approaches.
 value: 1000 # Leave this as 1000 unless you have a reason to change it
 tags:
   - 'RE'

@@ -8,11 +8,11 @@
 #   file documenting the solution)
 
 version: 'beta1'
-name: 'block-cipher'
+name: 'cipher-blocks'
 author: 'symmetric'
 flag: 'CTF{subterrenaceous_hyperencryption_misconfigurate_transmutational_deobfuscation}'
 description: |
-  Try out our new block-cipher encryption tool. Can you decode the secret message?
+  Introducing our state-of-the-art block-cipher encryption service! We've encrypted a confidential message using military-grade cryptography. However, something seems off with the decryption... Can you recover the hidden content?
 value: 1000 # Leave this as 1000 unless you have a reason to change it
 tags:
   - 'Crypto'

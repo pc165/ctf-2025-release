@@ -8,11 +8,11 @@
 #   file documenting the solution)
 
 version: beta1
-name: soothsayer
+name: fortune-teller
 author: itsc0rg1
 flag: "CTF{S33dth3tw1st3r}"
 description: |
-  Which came first the dragon or the egg? Guess correctly 30 times in a row.
+  Which came first - the chicken or the egg? Predict the outcome correctly 30 times consecutively to win!
 value: 1000
 tags:
   - "Mobile"

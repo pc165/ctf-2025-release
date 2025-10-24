@@ -8,11 +8,11 @@
 #   file documenting the solution)
 
 version: beta1
-name: web-tutorial-2
+name: xss-advanced
 author: itsc0rg1
 flag: 'CTF{Cl0udyFunct10n5F0rA11}'
 description: |
-  Try to use XSS again to steal the flag from the admin?
+  Advanced XSS challenge! Can you bypass additional protections and steal the flag from the admin?
 value: 1000
 tags:
   - "Web"

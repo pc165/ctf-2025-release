@@ -8,11 +8,11 @@
 #   file documenting the solution)
 
 version: 'beta1'
-name: 'tarnation'
+name: 'tape-backup'
 author: 'symmetric'
 flag: 'CTF{tarrible_format}'
 description: |
-  Can you help us recover the flag from this old tape backup?
+  Help us recover data from this ancient tape backup archive! The flag is somewhere in the backup data.
 value: 1000 # Leave this as 1000 unless you have a reason to change it
 tags:
   - '101'

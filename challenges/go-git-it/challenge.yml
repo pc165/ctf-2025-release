@@ -8,11 +8,11 @@
 #   file documenting the solution)
 
 version: "beta1"
-name: "go-git-it"
+name: "version-control"
 author: "anshc"
 flag: "CTF{g0tt4_g!t_th4t}"
 description: |
-  You didn't commit anything sensitive, right?
+  You kept your repository clean and never committed sensitive data, right? Right??
 value: 1000 # Leave this as 1000 unless you have a reason to change it
 tags:
   - "Web"

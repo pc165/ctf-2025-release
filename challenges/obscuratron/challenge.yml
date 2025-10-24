@@ -8,13 +8,11 @@
 #   file documenting the solution)
 
 version: 'beta1'
-name: 'obscuratron'
+name: 'encrypted-memo'
 author: 'ron'
 flag: 'CTF{xor-by-next-letter-isnt-crypto}'
 description: |
-  We've obtained an encrypted document and the secret software used to encrypt
-  it! But we can't find the decryption tool, can you figure out how to decrypt
-  it?
+  We've intercepted an encrypted document along with the proprietary encryption software used to protect it! Unfortunately, we can't locate the decryption utility. Can you reverse engineer the encryption algorithm and decrypt the file?
 value: 1000 # Leave this as 1000 unless you have a reason to change it
 tags:
   - 'RE'

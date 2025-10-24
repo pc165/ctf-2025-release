@@ -8,11 +8,11 @@
 #   file documenting the solution)
 
 version: 'beta1'
-name: 'cipher-block-corruption'
+name: 'corrupted-cryptography'
 author: 'symmetric'
 flag: 'CTF{is_my_flag_showing}'
 description: |
-  We encrypted this flag for you. It doesn't seem to decrypt correctly?
+  We encrypted this classified file for safekeeping, but the decryption process appears corrupted. The encryption was performed correctly, but something went wrong during transmission. Can you recover the original content?
 value: 1000 # Leave this as 1000 unless you have a reason to change it
 tags:
   - '101'

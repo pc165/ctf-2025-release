@@ -1,9 +1,9 @@
 version: 'beta1'
-name: 'crossworthy'
+name: 'puzzle-master'
 author: 'ron'
 flag: 'CTF{bugbounty}'
 description: |
-  Solve the crossword in the program (or attached as PDF/HTML files)! The flag is 66 across (surrounded by `CTF{...}`)
+  Test your knowledge with our annual crossword puzzle challenge! Solve the puzzle using the provided program or the attached PDF/HTML files. The flag is the answer to 66 across (format: CTF{...})
 value: 1000
 tags:
   - 'Misc'

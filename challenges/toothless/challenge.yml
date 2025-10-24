@@ -8,11 +8,11 @@
 #   file documenting the solution)
 
 version: 'beta1'
-name: 'toothless'
+name: 'network-capture'
 author: 'anshc'
 flag: 'CTF{y0u_us3l3ss_r3pt1l3}'
 description: |
-  This packet capture seems convoluted. Is it? 
+  This network packet capture appears unnecessarily complex. Or is it? Analyze the traffic to find the flag.
 value: 1000 # Leave this as 1000 unless you have a reason to change it
 tags:
   - 'Forensics'

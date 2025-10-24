@@ -8,11 +8,11 @@
 #   file documenting the solution)
 
 version: 'beta1'
-name: 'slackblock-steg'
+name: 'image-steganography'
 author: 'symmetric'
 flag: 'CTF{slack_space_not_just_for_filesystems}'
 description: |
-  There is a new JPEG stego tool, can you figure it out?
+  A novel JPEG steganography tool has been discovered. Can you figure out how it works and extract the hidden message?
 value: 1000 # Leave this as 1000 unless you have a reason to change it
 tags:
   - 'Forensics'

@@ -8,11 +8,11 @@
 #   file documenting the solution)
 
 version: 'beta1'
-name: 'NextPM'
+name: 'password-vault'
 author: 'matir'
 flag: 'CTF{auth_auth_bypass_bypass}'
 description: |
-  This is our next generation password manager. When you find the flag, you'll have Bingo.
+  Welcome to our next-generation password management solution! Store your credentials securely in the cloud. When you discover the flag, you'll have achieved Bingo.
 value: 1000 # Leave this as 1000 unless you have a reason to change it
 tags:
   - 'Web'

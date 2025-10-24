@@ -8,11 +8,11 @@
 #   file documenting the solution)
 
 version: 'beta1'
-name: 'pascals-homomorphism-1'
+name: 'crypto-challenge-1'
 author: 'symmetric'
 flag: 'CTF{wut_not_rsa}'
 description: |
-  We've implemented the Paillier cryptosystem for your hacking pleasure. Can you break it?
+  We've deployed the Paillier cryptosystem - a powerful homomorphic encryption scheme. Think you can break it?
 value: 1000 # Leave this as 1000 unless you have a reason to change it
 tags:
   - 'Crypto'

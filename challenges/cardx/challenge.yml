@@ -8,11 +8,11 @@
 #   file documenting the solution)
 
 version: beta1
-name: cardx
+name: authentication-station
 author: 'itsc0rg1 & symmetric'
 flag: 'CTF{plsverifynow}'
 description: |
-  Can you authenticate these dragon cards?
+  Welcome to the Rare Card Authentication System! Verify the authenticity of collectible trading cards using our advanced validation service.
 value: 1000
 tags:
   - Forensics

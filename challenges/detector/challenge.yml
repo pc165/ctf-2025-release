@@ -8,11 +8,11 @@
 #   file documenting the solution)
 
 version: 'beta1'
-name: 'detector'
+name: 'tracker-pro'
 author: 'ron'
 flag: 'CTF{tharr-be-draggggons}'
 description: |
-  Try out our new dragon-tracking tool! But be careful with special characters - they cause weird problems so we added JavaScript to block them!
+  Experience our cutting-edge tracking and detection tool! Perfect for monitoring and analysis. Note: Special characters cause system instabilities, so we've implemented JavaScript filters to block them. Try it out!
 value: 1000 # Leave this as 1000 unless you have a reason to change it
 tags:
   - 'Web'

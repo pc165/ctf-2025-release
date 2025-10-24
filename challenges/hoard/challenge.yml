@@ -8,11 +8,11 @@
 #   file documenting the solution)
 
 version: 'beta1'
-name: 'hoard'
+name: 'treasure-vault'
 author: 'ron'
 flag: 'CTF{a-dragons-hoard-is-all-he-has-dont-take-it-away}'
 description: |
-  Can you raid the dragon's hoard??
+  A legendary treasure vault guards priceless artifacts. Can you infiltrate the vault and claim the treasure?
 value: 1000 # Leave this as 1000 unless you have a reason to change it
 tags:
   - 'Pwn'

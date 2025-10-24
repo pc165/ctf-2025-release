@@ -8,11 +8,11 @@
 #   file documenting the solution)
 
 version: "beta1"
-name: "pathing"
+name: "directory-traversal"
 author: "ron"
 flag: "CTF{dotslashdotdotslashdotslashes}"
 description: |
-  Get the flag from this vulnerable server!
+  Extract the flag from this vulnerable web server using path manipulation techniques!
 value: 1000 # Leave this as 1000 unless you have a reason to change it
 tags:
   - "Web"

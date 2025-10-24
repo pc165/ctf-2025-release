@@ -8,11 +8,11 @@
 #   file documenting the solution)
 
 version: 'beta1'
-name: 'matryoshkafs'
+name: 'nested-filesystem'
 author: 'symmetric'
 flag: 'CTF{warranty_void_if_layers_removed}'
 description: |
-  Hardest drive filesystem
+  Welcome to the world's most complex filesystem architecture - layers upon layers of storage systems nested within each other. Can you navigate through them all?
 value: 1000 # Leave this as 1000 unless you have a reason to change it
 tags:
   - 'Forensics'

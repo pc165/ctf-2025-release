@@ -8,11 +8,11 @@
 #   file documenting the solution)
 
 version: "beta1"
-name: "drago-daction"
+name: "redaction-service"
 author: "ron"
 flag: "CTF{file-writing-is-fun}"
 description: |
-  Can you exploit this service to read the flag file?
+  Our secure document redaction service allows you to safely sanitize sensitive files. Connect to the service and redact confidential information. Can you exploit this to read protected files?
 value: 1000
 tags:
   - "Pwn"

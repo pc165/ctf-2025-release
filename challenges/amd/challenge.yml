@@ -8,11 +8,13 @@
 #   file documenting the solution)
 
 version: 'beta1'
-name: 'amd'
+name: 'firmware-frenzy'
 author: 'symmetric'
 flag: 'CTF{zen_and_the_art_of_bad_crypto}'
 description: |
-  Please use this cryptographically secure Advanced Machinecode Defense firmware updating utility to unbrick our computer!
+  System Critical Alert: Our mainframe has been bricked! The only hope is our cryptographically-secure Advanced Microcode Defense firmware update utility. 
+  
+  Use this cutting-edge tool to restore our system to working order. But beware - the firmware validation system may not be as bulletproof as advertised...
 value: 1000 # Leave this as 1000 unless you have a reason to change it
 tags:
   - 'Crypto'

@@ -8,11 +8,11 @@
 #   file documenting the solution)
 
 version: 'beta1'
-name: 'ruthless-dot-flag'
+name: 'retro-game-secrets-1'
 author: 'symmetric'
 flag: 'CTF{oldie_but_goodie}'
 description: |
-  Does the old game `ruthless.com` by the spy novelist hide something sinister?
+  Does the classic game "ruthless.com" by the famous spy novelist contain hidden secrets? Investigate the game files to find out!
 value: 1000 # Leave this as 1000 unless you have a reason to change it
 tags:
   - 'Forensics'

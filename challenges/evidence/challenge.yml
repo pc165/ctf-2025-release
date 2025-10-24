@@ -8,11 +8,11 @@
 #   file documenting the solution)
 
 version: 'beta1'
-name: 'evidence'
+name: 'evidence-locker'
 author: 'ron'
 flag: 'CTF{aha-found-em}'
 description: |
-  Do you know anything about dragons? Upload your evidence (but be careful with XML entities!)
+  Share your research findings by uploading evidence documents to our secure database. We accept XML file formats for maximum compatibility. (Warning: Be cautious with XML entity processing!)
 value: 1000 # Leave this as 1000 unless you have a reason to change it
 tags:
   - 'Web'

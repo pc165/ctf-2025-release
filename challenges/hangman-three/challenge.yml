@@ -8,11 +8,11 @@
 #   file documenting the solution)
 
 version: "beta1"
-name: "hangman-three"
+name: "word-game-gamma"
 author: "itsc0rg1"
 flag: "CTF{hangm4nW1thW3akJWTK3y}"
 description: |
-  Play hangman and guess the flag
+  Play our ultimate word-guessing challenge and reveal the flag!
 value: 1000 # Leave this as 1000 unless you have a reason to change it
 tags:
   - "Web"

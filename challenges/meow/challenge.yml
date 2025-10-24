@@ -8,11 +8,11 @@
 #   file documenting the solution)
 
 version: beta1
-name: meow
+name: terminal-intro
 author: Daniel Pendolino
 flag: 'CTF{DontBeACheatAh}'
 description: |
-  Terminal Challenges Welcome
+  Welcome to Terminal Challenges! Start your journey here with this introductory challenge.
 value: 1000
 tags:
   - Terminal

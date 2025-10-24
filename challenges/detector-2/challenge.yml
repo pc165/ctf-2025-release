@@ -8,11 +8,11 @@
 #   file documenting the solution)
 
 version: 'beta1'
-name: 'detector-2'
+name: 'tracker-pro-plus'
 author: 'ron'
 flag: 'CTF{tharr-be-MORE-draggggons}'
 description: |
-  Try out our EVEN NEWER dragon-tracking tool! We listened to your feedback and TOTALLY 
+  Introducing Tracker Pro PLUS! We listened to your feedback and completely overhauled our security model. This version is significantly more robust than the original!
 value: 1000 # Leave this as 1000 unless you have a reason to change it
 tags:
   - 'Web'

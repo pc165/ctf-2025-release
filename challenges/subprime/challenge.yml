@@ -8,11 +8,11 @@
 #   file documenting the solution)
 
 version: 'beta1'
-name: 'subprime'
+name: 'weak-rsa'
 author: 'anshc'
 flag: 'CTF{n0n_0pt!m@l_pR!m3$}'
 description: |
-  Rivest, Shamir, and Adleman think they have it all figured out, don't they?
+  Rivest, Shamir, and Adleman thought they had it all figured out with their encryption algorithm... or did they?
 value: 1000
 tags:
   - 'Crypto'

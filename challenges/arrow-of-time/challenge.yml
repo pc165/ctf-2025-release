@@ -8,11 +8,11 @@
 #   file documenting the solution)
 
 version: 'beta1'
-name: 'arrow-of-time'
+name: 'temporal-paradox'
 author: 'symmetric'
 flag: 'CTF{reverse_time_polarity}'
 description: |
-  The future is here, but can you use it to make sense of the present?
+  Time flows in mysterious ways. We've discovered technology from the future, but understanding it requires decoding messages from the present. Can you harness temporal mechanics to unlock the secret?
 value: 1000 # Leave this as 1000 unless you have a reason to change it
 tags:
   - 'Crypto'

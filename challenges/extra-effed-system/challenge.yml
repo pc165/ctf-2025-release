@@ -8,11 +8,11 @@
 #   file documenting the solution)
 
 version: 'beta1'
-name: 'extra-effed-system'
+name: 'corrupted-storage'
 author: 'symmetric'
 flag: 'CTF{ticktock_upwarp}'
 description: |
-  My hard drive got fried by the airport X-Ray scanner! Now I'll never see my glorious flag image again :-(
+  Disaster struck at airport security! My hard drive was corrupted by the X-ray scanner, and now my precious flag image is lost forever. Can you perform data recovery magic and retrieve it?
 value: 1000 # Leave this as 1000 unless you have a reason to change it
 tags:
   - 'Forensics'

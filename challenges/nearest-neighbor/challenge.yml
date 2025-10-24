@@ -8,11 +8,11 @@
 #   file documenting the solution)
 
 version: 'beta1'
-name: 'nearest-neighbor'
+name: 'shrinking-wallpaper'
 author: 'symmetric'
 flag: 'CTF{incredible_shrinking_flag}'
 description: |
-  I thought I remembered this wallpaper being a lot smaller?
+  Strange... I could swear this wallpaper image used to be much smaller. Did someone scale it up?
 value: 1000 # Leave this as 1000 unless you have a reason to change it
 tags:
   - '101'

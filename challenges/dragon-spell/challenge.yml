@@ -8,11 +8,11 @@
 #   file documenting the solution)
 
 version: 'beta1'
-name: 'dragon-spell'
+name: 'ancient-incantation'
 author: 'itsc0rg1 & symmetric'
 flag: 'CTF{viridian}'
 description: |
-  Can you decipher this ancient scroll and summon the dragon?
+  An ancient scroll has been discovered containing mystical symbols and cryptic runes. Decipher this arcane text to invoke the summoning ritual!
 value: 1000 # Leave this as 1000 unless you have a reason to change it
 tags:
   - 'Crypto'

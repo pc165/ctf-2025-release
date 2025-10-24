@@ -8,11 +8,11 @@
 #   file documenting the solution)
 
 version: 'beta1'
-name: 'dating'
+name: 'love-connection'
 author: 'ron'
 flag: 'CTF{helping-dragons-find-love-since-2025}'
 description: |
-  Can you gain RCE to read the flag??
+  Find your perfect match with our innovative online dating platform! Create profiles, browse potential connections, and maybe find something more interesting along the way... Can you achieve Remote Code Execution and read the flag?
 value: 1000 # Leave this as 1000 unless you have a reason to change it
 tags:
   - 'Web'
@@ -25,4 +25,3 @@ flag_path: '/flag.txt' # Optional; but helpful for players
 files:
   - challenge/src/src/main/java/com/example/dragon/ProfileServlet.java
 replicas: 1
-

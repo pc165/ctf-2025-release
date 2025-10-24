@@ -8,11 +8,11 @@
 #   file documenting the solution)
 
 version: 'beta1'
-name: 'extinction'
+name: 'doomsday-device'
 author: 'ron'
 flag: 'CTF{i-saved-the-dragons-and-all-i-got-was-this-stupid-flag}'
 description: |
-  A Dragon Doomsday weapon has been activated! We've stolen an account (`admin:admin`), but it's not working!! Can you evade their detection??
+  CRITICAL ALERT: A catastrophic weapon system has been activated! We've acquired compromised credentials (admin:admin) from their network, but authentication is failing! Can you bypass their intrusion detection systems and prevent disaster?
 
 value: 1000 # Leave this as 1000 unless you have a reason to change it
 tags:

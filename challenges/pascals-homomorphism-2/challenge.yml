@@ -8,11 +8,11 @@
 #   file documenting the solution)
 
 version: 'beta1'
-name: 'pascals-homomorphism-2'
+name: 'crypto-challenge-2'
 author: 'symmetric'
 flag: 'CTF{homomorphisms_for_the_win}'
 description: |
-  Okay now you *really* have to break it. (Uses same service as part 1)
+  Now for the real challenge - you must truly break the system this time! (Uses the same service as part 1)
 value: 1000 # Leave this as 1000 unless you have a reason to change it
 tags:
   - 'Crypto'

@@ -8,11 +8,11 @@
 #   file documenting the solution)
 
 version: 'beta1'
-name: 'oh-the-places-youll-go-1'
+name: 'global-tracker-1'
 author: 'symmetric & TheSorites'
 flag: 'CTF{i_kill_where_i_wish_and_none_dare_resist}'
 description: |
-  We've been getting around. Can you track us down?
+  We've been traveling the world! Can you track down our locations from the clues we've left behind?
 value: 1000 # Leave this as 1000 unless you have a reason to change it
 tags:
   - 'OSINT'

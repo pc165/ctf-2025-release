@@ -8,11 +8,11 @@
 #   file documenting the solution)
 
 version: "beta1"
-name: "hangman-two"
+name: "word-game-beta"
 author: "itsc0rg1"
 flag: "CTF{h4ngmanr0ulett3w1n}"
 description: |
-  Play hangman and guess the random string to get the flag.
+  Play our enhanced word-guessing game! This time, you must correctly guess a randomly generated string to win the flag. Good luck!
 value: 1000 # Leave this as 1000 unless you have a reason to change it
 tags:
   - "Web"

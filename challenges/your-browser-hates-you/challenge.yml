@@ -8,15 +8,15 @@
 #   file documenting the solution)
 
 version: 'beta1'
-name: 'your-browser-hates-you'
+name: 'ssl-nightmare'
 author: 'ron'
 flag: 'CTF{shh-its-a-secret}'
 description: |
-  We're pretty sure there's a flag on this page, but something is wrong with SSL and we can't get our browser to render it! Can you help?
+  We believe there's a flag on this webpage, but SSL certificate errors are preventing our browsers from loading it! Can you help us access the site?
 
-  *(Note: you'll intentionally get an SSL error when you visit the page)*
+  *(Note: SSL errors are intentional - you'll need to work around them)*
 
-  Your browser might not like this one.
+  Your browser definitely won't like this challenge.
 value: 1000
 tags:
   - 'Web'

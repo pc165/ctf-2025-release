@@ -8,11 +8,11 @@
 #   file documenting the solution)
 
 version: 'beta1'
-name: 'magic'
+name: 'mysterious-file'
 author: 'anshc'
 flag: 'CTF{g0t_th3_p0w3r_u_n33d}'
 description: |
-  I think there's something wrong with this file, can you work some magic? 
+  Something is definitely wrong with this file. Can you work your forensic magic to uncover the hidden secret?
 value: 1000 # Leave this as 1000 unless you have a reason to change it
 tags:
   - 'Forensics'
@@ -20,4 +20,3 @@ tags:
 files:
   - challenge/magic.png
 notes: |
-  
