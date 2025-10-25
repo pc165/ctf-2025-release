@@ -1,35 +1,35 @@
 #!/bin/bash
+curl -fs https://authentication-station.ctf.hackthelab.online
+curl -fs https://love-connection.ctf.hackthelab.online
+curl -fs https://word-game-alpha.ctf.hackthelab.online
+curl -fs https://word-game-beta.ctf.hackthelab.online
+curl -fs https://word-game-gamma.ctf.hackthelab.online
+curl -fs https://password-vault.ctf.hackthelab.online
+curl -fs https://border-checkpoint.ctf.hackthelab.online
+curl -fs https://directory-traversal.ctf.hackthelab.online
+curl -fs https://report-system.ctf.hackthelab.online
+curl -fs https://image-steganography.ctf.hackthelab.online
+curl -fs https://xss-basics.ctf.hackthelab.online
+curl -fs https://xss-advanced.ctf.hackthelab.online
+curl -fs https://cipher-blocks.ctf.hackthelab.online
+curl -fs https://classified-documents.ctf.hackthelab.online
+curl -fs https://treasure-vault.ctf.hackthelab.online
+curl -fs https://classification-system.ctf.hackthelab.online
+curl -fs https://tracker-pro.ctf.hackthelab.online
+curl -fs https://tracker-pro-plus.ctf.hackthelab.online
+curl -fs https://evidence-locker.ctf.hackthelab.online
+curl -fs https://doomsday-device.ctf.hackthelab.online
+curl -fs https://version-control.ctf.hackthelab.online
 
-curl -fs -o /dev/null https://cardx.ctf.hackthelab.online
-curl -fs -o /dev/null https://dating.ctf.hackthelab.online
-curl -fs -o /dev/null https://hangman-one.ctf.hackthelab.online
-curl -fs -o /dev/null https://hangman-two.ctf.hackthelab.online
-curl -fs -o /dev/null https://hangman-three.ctf.hackthelab.online
-curl -fs -o /dev/null https://last.ctf.hackthelab.online
-curl -fs -o /dev/null https://moa-station.ctf.hackthelab.online
-curl -fs -o /dev/null https://pathing.ctf.hackthelab.online
-curl -fs -o /dev/null https://sighting.ctf.hackthelab.online
-curl -fs -o /dev/null https://slackblock-steg.ctf.hackthelab.online
-curl -fs -o /dev/null https://web-tutorial-1.ctf.hackthelab.online
-curl -fs -o /dev/null https://web-tutorial-2.ctf.hackthelab.online
-curl -fs -o /dev/null https://block-cipher.ctf.hackthelab.online
-curl -fs -o /dev/null https://hidden-reports.ctf.hackthelab.online
-curl -fs -o /dev/null https://hoard.ctf.hackthelab.online
-curl -fs -o /dev/null https://taxonomy.ctf.hackthelab.online
-curl -fs -o /dev/null https://detector.ctf.hackthelab.online
-curl -fs -o /dev/null https://detector-2.ctf.hackthelab.online
-curl -fs -o /dev/null https://evidence.ctf.hackthelab.online
-curl -fs -o /dev/null https://extinction.ctf.hackthelab.online
-curl -fs -o /dev/null https://go-git-it.ctf.hackthelab.online
-
-nc -z arrow-of-time.ctf.hackthelab.online 9000
-nc -z cert-tool.ctf.hackthelab.online 9001
-nc -z digital-citizen.ctf.hackthelab.online 9002
-nc -z flag-search.ctf.hackthelab.online 9003
-nc -z goto-zero.ctf.hackthelab.online 9004
-nc -z pascals-homomorphism.ctf.hackthelab.online 9005
-nc -z amd.ctf.hackthelab.online 9006
-nc -z bug-me.ctf.hackthelab.online 9007
-nc -z drago-daction.ctf.hackthelab.online 9008
-nc -z go-back.ctf.hackthelab.online 9009
-nc -z meow.ctf.hackthelab.online 9010
+nc -z temporal-paradox.ctf.hackthelab.online 9000
+nc -z certificate-chaos.ctf.hackthelab.online 9001
+nc -z registry-alpha.ctf.hackthelab.online 9002
+nc -z treasure-hunt.ctf.hackthelab.online 9003
+nc -z buffer-overflow-basics.ctf.hackthelab.online 9004
+nc -z crypto-challenge-1.ctf.hackthelab.online 9005
+nc -z firmware-frenzy.ctf.hackthelab.online 9006
+nc -z labyrinth-of-logic.ctf.hackthelab.online 9007
+nc -z redaction-service.ctf.hackthelab.online 9008
+nc -z reverse-engineering-101.ctf.hackthelab.online 9009
+nc -z terminal-intro.ctf.hackthelab.online 9010
+nc -z memory-maestro.ctf.hackthelab.online 9011
