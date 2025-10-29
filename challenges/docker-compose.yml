@@ -8,7 +8,7 @@ services:
     restart: unless-stopped
     healthcheck:
       test: [ "CMD", "python3", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000').read()" ]
-      interval: 30s
+      interval: 1m
       timeout: 10s
       retries: 3
       start_period: 10s
@@ -23,7 +23,7 @@ services:
     restart: unless-stopped
     healthcheck:
       test: [ "CMD", "curl", "-f", "http://localhost:8080" ]
-      interval: 30s
+      interval: 1m
       timeout: 10s
       retries: 3
       start_period: 10s
@@ -38,7 +38,7 @@ services:
     restart: unless-stopped
     healthcheck:
       test: [ "CMD", "python3", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000').read()" ]
-      interval: 30s
+      interval: 1m
       timeout: 10s
       retries: 3
       start_period: 10s
@@ -53,7 +53,7 @@ services:
     restart: unless-stopped
     healthcheck:
       test: [ "CMD", "python3", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000').read()" ]
-      interval: 30s
+      interval: 1m
       timeout: 10s
       retries: 3
       start_period: 10s
@@ -68,7 +68,7 @@ services:
     restart: unless-stopped
     healthcheck:
       test: [ "CMD", "python3", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000').read()" ]
-      interval: 30s
+      interval: 1m
       timeout: 10s
       retries: 3
       start_period: 10s
@@ -83,7 +83,7 @@ services:
     restart: unless-stopped
     healthcheck:
       test: [ "CMD-SHELL", "/usr/local/bin/node", "-e" ,"require('http').get('http://localhost:3000', (r) => process.exit(r.statusCode === 200 ? 0 : 1)).on('error', () => process.exit(1))" ]
-      interval: 30s
+      interval: 1m
       timeout: 10s
       retries: 3
       start_period: 10s
@@ -98,7 +98,7 @@ services:
     restart: unless-stopped
     healthcheck:
       test: [ "CMD", "node", "-e", "require('http').get('http://localhost:3003', (r) => process.exit(r.statusCode === 200 ? 0 : 1)).on('error', () => process.exit(1))" ]
-      interval: 30s
+      interval: 1m
       timeout: 10s
       retries: 3
       start_period: 10s
@@ -113,7 +113,7 @@ services:
     restart: unless-stopped
     healthcheck:
       test: [ "CMD", "curl", "-f", "http://localhost:4000" ]
-      interval: 30s
+      interval: 1m
       timeout: 10s
       retries: 3
       start_period: 10s
@@ -128,7 +128,7 @@ services:
     restart: unless-stopped
     healthcheck:
       test: [ "CMD-SHELL", "php -r 'file_get_contents(\"http://localhost:80\");' || exit 1" ]
-      interval: 30s
+      interval: 1m
       timeout: 10s
       retries: 3
       start_period: 10s
@@ -143,7 +143,7 @@ services:
     restart: unless-stopped
     healthcheck:
       test: [ "CMD", "python3", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8888').read()" ]
-      interval: 30s
+      interval: 1m
       timeout: 10s
       retries: 3
       start_period: 10s
@@ -158,7 +158,7 @@ services:
     restart: unless-stopped
     healthcheck:
       test: [ "CMD", "python3", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000').read()" ]
-      interval: 30s
+      interval: 1m
       timeout: 10s
       retries: 3
       start_period: 10s
@@ -173,7 +173,7 @@ services:
     restart: unless-stopped
     healthcheck:
       test: [ "CMD", "python3", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000').read()" ]
-      interval: 30s
+      interval: 1m
       timeout: 10s
       retries: 3
       start_period: 10s
@@ -188,7 +188,7 @@ services:
     restart: unless-stopped
     healthcheck:
       test: [ "CMD", "curl", "-f", "http://localhost:55744" ]
-      interval: 30s
+      interval: 1m
       timeout: 10s
       retries: 3
       start_period: 10s
@@ -203,7 +203,7 @@ services:
     restart: unless-stopped
     healthcheck:
       test: [ "CMD", "curl", "-f", "http://localhost:80" ]
-      interval: 30s
+      interval: 1m
       timeout: 10s
       retries: 3
       start_period: 10s
@@ -218,7 +218,7 @@ services:
     restart: unless-stopped
     healthcheck:
       test: [ "CMD", "curl", "-f", "http://localhost:80" ]
-      interval: 30s
+      interval: 1m
       timeout: 10s
       retries: 3
       start_period: 10s
@@ -233,7 +233,7 @@ services:
     restart: unless-stopped
     healthcheck:
       test: [ "CMD", "curl", "-f", "http://localhost:80" ]
-      interval: 30s
+      interval: 1m
       timeout: 10s
       retries: 3
       start_period: 10s
@@ -248,7 +248,7 @@ services:
     restart: unless-stopped
     healthcheck:
       test: [ "CMD", "curl", "-f", "http://localhost:80" ]
-      interval: 30s
+      interval: 1m
       timeout: 10s
       retries: 3
       start_period: 10s
@@ -263,7 +263,7 @@ services:
     restart: unless-stopped
     healthcheck:
       test: [ "CMD", "curl", "-f", "http://localhost:80" ]
-      interval: 30s
+      interval: 1m
       timeout: 10s
       retries: 3
       start_period: 10s
@@ -278,7 +278,7 @@ services:
     restart: unless-stopped
     healthcheck:
       test: [ "CMD", "curl", "-f", "http://localhost:80" ]
-      interval: 30s
+      interval: 1m
       timeout: 10s
       retries: 3
       start_period: 10s
@@ -293,7 +293,7 @@ services:
     restart: unless-stopped
     healthcheck:
       test: [ "CMD", "curl", "-f", "http://localhost:80" ]
-      interval: 30s
+      interval: 1m
       timeout: 10s
       retries: 3
       start_period: 10s
@@ -308,7 +308,7 @@ services:
     restart: unless-stopped
     healthcheck:
       test: [ "CMD", "curl", "-f", "http://localhost:80" ]
-      interval: 30s
+      interval: 1m
       timeout: 10s
       retries: 3
       start_period: 10s
@@ -324,7 +324,7 @@ services:
     restart: unless-stopped
     healthcheck:
       test: [ "CMD-SHELL", "timeout 1 bash -c '</dev/tcp/localhost/54321' || exit 1" ]
-      interval: 30s
+      interval: 1m
       timeout: 10s
       retries: 3
       start_period: 10s
@@ -337,7 +337,7 @@ services:
     restart: unless-stopped
     healthcheck:
       test: [ "CMD-SHELL", "timeout 1 socat - TCP:localhost:6464,connect-timeout=1 </dev/null || exit 1" ]
-      interval: 30s
+      interval: 1m
       timeout: 10s
       retries: 3
       start_period: 10s
@@ -350,7 +350,7 @@ services:
     restart: unless-stopped
     healthcheck:
       test: [ "CMD-SHELL", "timeout 1 socat - TCP:localhost:6537,connect-timeout=1 </dev/null || exit 1" ]
-      interval: 30s
+      interval: 1m
       timeout: 10s
       retries: 3
       start_period: 10s
@@ -363,7 +363,7 @@ services:
     restart: unless-stopped
     healthcheck:
       test: [ "CMD-SHELL", "timeout 1 socat - TCP:localhost:11010,connect-timeout=1 </dev/null || exit 1" ]
-      interval: 30s
+      interval: 1m
       timeout: 10s
       retries: 3
       start_period: 10s
@@ -376,7 +376,7 @@ services:
     restart: unless-stopped
     healthcheck:
       test: [ "CMD-SHELL", "timeout 1 socat - TCP:localhost:4445,connect-timeout=1 </dev/null || exit 1" ]
-      interval: 30s
+      interval: 1m
       timeout: 10s
       retries: 3
       start_period: 10s
@@ -389,7 +389,7 @@ services:
     restart: unless-stopped
     healthcheck:
       test: [ "CMD-SHELL", "timeout 1 socat - TCP:localhost:1999,connect-timeout=1 </dev/null || exit 1" ]
-      interval: 30s
+      interval: 1m
       timeout: 10s
       retries: 3
       start_period: 10s
@@ -402,7 +402,7 @@ services:
     restart: unless-stopped
     healthcheck:
       test: [ "CMD-SHELL", "timeout 1 socat - TCP:localhost:8664,connect-timeout=1 </dev/null || exit 1" ]
-      interval: 30s
+      interval: 1m
       timeout: 10s
       retries: 3
       start_period: 10s
@@ -415,7 +415,7 @@ services:
     restart: unless-stopped
     healthcheck:
       test: [ "CMD-SHELL", "timeout 1 socat - TCP:localhost:4445,connect-timeout=1 </dev/null || exit 1" ]
-      interval: 30s
+      interval: 1m
       timeout: 10s
       retries: 3
       start_period: 10s
@@ -428,7 +428,7 @@ services:
     restart: unless-stopped
     healthcheck:
       test: [ "CMD-SHELL", "timeout 1 socat - TCP:localhost:4445,connect-timeout=1 </dev/null || exit 1" ]
-      interval: 30s
+      interval: 1m
       timeout: 10s
       retries: 3
       start_period: 10s
@@ -441,7 +441,7 @@ services:
     restart: unless-stopped
     healthcheck:
       test: [ "CMD-SHELL", "timeout 1 socat - TCP:localhost:4445,connect-timeout=1 </dev/null || exit 1" ]
-      interval: 30s
+      interval: 1m
       timeout: 10s
       retries: 3
       start_period: 10s
@@ -454,7 +454,7 @@ services:
     restart: unless-stopped
     healthcheck:
       test: [ "CMD-SHELL", "timeout 1 socat - TCP:localhost:4445,connect-timeout=1 </dev/null || exit 1" ]
-      interval: 30s
+      interval: 1m
       timeout: 10s
       retries: 3
       start_period: 10s
@@ -467,7 +467,7 @@ services:
     restart: unless-stopped
     healthcheck:
       test: [ "CMD-SHELL", "timeout 1 socat - TCP:localhost:4113,connect-timeout=1 </dev/null || exit 1" ]
-      interval: 30s
+      interval: 1m
       timeout: 10s
       retries: 3
       start_period: 10s
@@ -482,7 +482,7 @@ services:
     restart: unless-stopped
     healthcheck:
       test: [ "CMD", "curl", "-f", "http://localhost" ]
-      interval: 30s
+      interval: 1m
       timeout: 10s
       retries: 3
       start_period: 10s
