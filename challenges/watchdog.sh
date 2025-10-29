@@ -1,8 +1,11 @@
 #!/bin/bash
 
 # --- Configuration ---
-# How long (in seconds) the CPU must be high before restarting
-RESTART_AFTER_SECONDS=150 # 5 minutes
+# Set the CPU % threshold (integer). 99 means 99% or higher.
+CPU_THRESHOLD=90
+
+# How long (in seconds) the CPU must be at or above the threshold
+RESTART_AFTER_SECONDS=300 # 5 minutes
 
 # How often (in seconds) to check the CPU usage
 CHECK_INTERVAL=30
@@ -13,7 +16,7 @@ CHECK_INTERVAL=30
 declare -A high_cpu_start_times
 
 echo "Starting CPU monitor... Script must remain running."
-echo "Will force-restart (kill) any compose service at >=99% CPU for $RESTART_AFTER_SECONDS seconds."
+echo "Will force-restart (kill) any compose service at >=${CPU_THRESHOLD}% CPU for $RESTART_AFTER_SECONDS seconds."
 
 while true; do
     # Get all running container IDs for the current compose project
@@ -50,7 +53,7 @@ while true; do
         CPU_USAGE=$(docker stats --no-stream --format "{{.CPUPerc}}" "$ID" | sed 's/%//' | cut -d'.' -f1)
 
         # --- Main Logic ---
-        if [ "$CPU_USAGE" -ge 99 ]; then
+        if [ "$CPU_USAGE" -ge "$CPU_THRESHOLD" ]; then
             # CPU is HIGH
             if [[ -v high_cpu_start_times[$ID] ]]; then
                 # We are already tracking this container. Check duration.
